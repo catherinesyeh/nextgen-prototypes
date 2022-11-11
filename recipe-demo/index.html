@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>PDF demo</title>
+    <meta name="description" content="PDF demo">
+    <meta property="og:image" content="img/socimg.png" />
+    <link rel="icon" type="image/png" href="img/fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href='style.css' />
+</head>
+<body>
+    <div id="content">
+        <h1 id="heading">Welcome to the <span class="blue">next-gen</span> PDF reader</h1>
+        <div id="bar-and-reader">
+            <div id="all-popups">
+                <div id="popup-menu">
+                    <i id="unit-button" title="unit conversions" class="fa fa-balance-scale" aria-hidden="true"></i>
+                </div>
+                <div id="unit-popup" class="popup">
+                    <div class="plugin-header">
+                        <p><b>Convert</b></p>
+                        <select id="unit-type" name="unit-type"></select>
+                    </div>
+                    <div class="plugin-row">
+                        <input type="text" id="quant1" placeholder="Quantity 1" />
+                        <select id="dropdown1"></select>
+                    </div>
+                    <div class="plugin-row">
+                        <input type="text" id="quant2" placeholder="Quantity 2" />
+                        <select id="dropdown2"></select>
+                    </div>
+                </div>
+            </div>
+            <div id="top-bar">
+                <div id="toggle-box">
+                    <i id="toggle-small" title="toggle plugins" class="fa fa-plug" aria-hidden="true"></i>
+                    <h4 id="toggle-button" class="button" title="toggle plugins">Toggle <span>Plug-ins</span></h4>
+                    <div id="plugins" class="popup hide">
+                        <div id="unit-plugin" class="plugin">
+                            <p>Units</p>
+                            <i class="fa fa-toggle-on" title="toggle on/off" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom-box">
+                    <div id="zoom">
+                        <i id="zoom-out" class="fa fa-minus" title="zoom out" aria-hidden="true"></i>
+                        <p><span id="percent">100</span>%</p>
+                        <i id="zoom-in" class="fa fa-plus" title="zoom in" aria-hidden="true"></i>
+                    </div>
+                    <p id="reset" title="reset">Reset</p>
+                </div>
+                <i id="fullscreen" title="toggle fullscreen" class="fa fa-expand" aria-hidden="true"></i>
+            </div>
+            <div id="pdf-reader">
+                <div id="document-box">
+                    <div id="document">
+                        <p>This is a sample pdf. Select some text to get started!</p>
+                        <p class="list-heading">Ingredients:</p>
+                        <ul class="list">
+                            <li>
+                                150ml sunflower oil, plus extra for the tin
+                            </li>
+                            <li>
+                                175g self-raising flour
+                            </li>
+                            <li>
+                                2 tbsp cocoa powder
+                            </li>
+                            <li>
+                                1 tsp bicarbonate of soda
+                            </li>
+                            <li>
+                                150g caster sugar
+                            </li>
+                            <li>
+                                2 tbsp golden syrup
+                            </li>
+                            <li>
+                                2 large eggs, lightly beaten
+                            </li>
+                            <li>
+                                150ml semi-skimmed milk
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="bundle.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
